@@ -7,14 +7,14 @@ pipeline {
         
     stage('Git') {
       steps {
-        git 'https://github.com/NIK8H/master.git'
+        git "https://github.com/NIK8H/master.git"
       }
     }
      
-    stage('Build') {
+    stage("Build") {
       steps {
-        sh 'npm install'
-        sh 'gulp webpack'
+        sh "npm install"
+        sh "gulp webpack"
       }
     }  
     }
