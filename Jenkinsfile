@@ -1,7 +1,7 @@
 pipeline {
   agent any
     
-  tools {nodejs "latest"}
+  tools {NodeJS "node"}
     
   stages {
         
