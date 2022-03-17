@@ -1,7 +1,7 @@
 pipeline {
   agent any
     
-  tools {nodejs "bulidpipeline"}
+  tools {nodejs "nodejs"}
     
   stages {
         
