@@ -1,7 +1,7 @@
 pipeline {
   agent any
     
-  tools {nodejs "nodejs"}
+  tools {nodejs "latest"}
     
   stages {
         
@@ -14,6 +14,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'npm install'
+        sh 'gulp webpack'
       }
     }  
     }
